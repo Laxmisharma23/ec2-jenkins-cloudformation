@@ -19,11 +19,11 @@ Resources:
           
             
 Resources:
- S3Bucket
-  Type: "AWS::S3::Bucket"
-  DeletionPolicy: "Retain"
-  Properties:
-    BucketName: "laxmicftbucket"
+  S3Bucket:
+    Type: "AWS::S3::Bucket"
+    DeletionPolicy: "Retain"
+    Properties:
+      BucketName: "laxmicftbucket"
   
             
  
