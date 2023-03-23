@@ -8,14 +8,6 @@ Resources:
       ImageId: "ami-02f3f602d23f1659d"
       InstanceType: "t2.micro"
       KeyName: "bravo"
-      BlockDeviceMappings:
-        -
-          DeviceName: /dev/sdm
-          Ebs:
-            VolumeType: io1
-            Iops: 200
-            DeleteOnTermination: false
-            VolumeSize: 20
   S3Bucket:
     Type: "AWS::S3::Bucket"
     DeletionPolicy: "Retain"
