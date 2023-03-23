@@ -7,7 +7,7 @@ Resources:
     Properties:
       ImageId: "ami-02f3f602d23f1659d"
       InstanceType: "t2.micro"
-      KeyName: "laxmi-ec2-cft"
+      KeyName: "bravo"
       BlockDeviceMappings:
         -
           DeviceName: /dev/sdm
