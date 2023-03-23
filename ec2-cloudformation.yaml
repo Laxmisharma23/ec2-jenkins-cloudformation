@@ -8,3 +8,11 @@ Resources:
       ImageId: "ami-02f3f602d23f1659d"
       InstanceType: "t2.micro"
       KeyName: "laxmi-ec2-cft"
+      BlockDeviceMappings:
+        -
+          DeviceName: /dev/sdm
+          Ebs:
+            VolumeType: io1
+            Iops: 200
+            DeleteOnTermination: false
+            VolumeSize: 20
