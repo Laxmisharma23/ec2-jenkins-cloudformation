@@ -3,7 +3,7 @@ AWSTemplateFormatVersion: "2010-09-09"
 Description: A sample template for s3 bucket
 Resources:
   EC2Instance:
-  S3Bucket:
+    S3Bucket:
     Type: "AWS::S3::Bucket"
     DeletionPolicy: "Retain"
     Properties:
