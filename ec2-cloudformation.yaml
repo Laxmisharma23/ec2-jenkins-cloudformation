@@ -1,18 +1,24 @@
-AWSTemplateFormatVersion: "2010-09-09"
-Description: A sample template
+AWSTemplateFormatVersion: 2010-09-09
+Description: sample ec2 template
+
 Resources:
-  EC2Instance:
-    Type: "AWS::EC2::Instance"
-    Properties:
-      ImageId: "ami-02f3f602d23f1659d"
-      InstanceType: "t2.micro"
-      KeyName: "bravo"
+  WebAppInstance202:
+    Type: AWS::EC2::Instance
+    Properties:
+      ImageId: ami-005f9685cb30f234b
+      #ImageId: ami-0d5eff06f840b45e9 # ImageID valid only in us-east-1 region
+      InstanceType: t2.micro
+      "Tags" : [
+            {"Key" : "Name", "Value" : "laxmi-ec2-s3bucket"},
+        ]  
+
+
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
     DeletionPolicy: "Retain"
     Properties:
-      BucketName: "laxmicftbucket"
+      BucketName: "laxmi-s3bucket"
    
       
       
