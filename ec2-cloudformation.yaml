@@ -10,7 +10,8 @@ Resources:
       InstanceType: t2.micro
       "Tags" : [
             {"Key" : "Name", "Value" : "laxmi-ec2-s3bucket"},
-        ]  
+        ]
+        
 Resources:
   S3Bucket:
     Type: "AWS::S3::Bucket"
