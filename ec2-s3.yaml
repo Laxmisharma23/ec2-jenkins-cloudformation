@@ -4,7 +4,7 @@ Resources:
   EC2Instance:
     Type: "AWS::EC2::Instance"
     Properties:
-      ImageId: "ami-02f3f602d23f1659d"
+      ImageId: "ami-00c39f71452c08778"
       InstanceType: "t2.micro"
       KeyName: "bravo"
       BlockDeviceMappings:
